@@ -84,37 +84,52 @@
     </p>
 </div>
     </section>
-<section style="position: relative; overflow: hidden; display: flex; align-items: center; min-height: 80vh; padding: 40px 20px;">
-    
+<section style="position: relative; overflow: hidden; display: flex; align-items: center; min-height: 600px; padding: 60px 10%; background: #fff;">
+
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-        <img src="map1.jpg" alt="Strategic Map" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8);">
-        <div style="position: absolute; inset: 0; background: rgba(255,255,255,0.7); display: block;" class="md:hidden"></div>
+        <img src="map1.jpg" alt="Strategic Map" 
+     style="position: absolute; 
+            right: 0; 
+            top: 50%; 
+            width: 750px; /* Use a fixed width to stop browser compression */
+            height: auto; 
+            transform: translateY(-50%) scale(1.5); /* Zoom without losing quality */
+            transform-origin: right center;
+            object-fit: contain;
+            opacity: 100; 
+            filter: colour(100%) contrast(1.2) brightness(1.1);
+            /* --- CRITICAL FOR 4000PX SHARPNESS --- */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: high-quality;
+            will-change: transform; /* Tells browser to keep it sharp */
+            z-index: 1;"></div>
     </div>
 
-    <div style="position: relative; z-index: 2; width: 100%;" class="md:w-[45%] md:ml-[10%]">
-        <h2 style="color: #004a7c; font-size: 24px; border-left: 4px solid #004a7c; padding-left: 15px; margin-bottom: 25px; font-family: sans-serif; text-transform: uppercase;">
-            Our Strategic <br><b>Presence</b>
+    <div style="position: relative; z-index: 3; width: 45%; min-width: 320px;">
+        <h2 style="color: #004a7c; font-size: 28px; display: block; border-left: 4px solid #004a7c; padding-left: 15px; margin-bottom: 30px; font-family: sans-serif;">
+            OUR STRATEGIC PRESENCE
         </h2>
         
-        <div style="font-family: sans-serif; color: #1a1a1a;">
-            <div style="margin-bottom: 20px;">
-                <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">SCALABLE OFFICES</h3>
-                <p style="font-size: 13px; line-height: 1.4; color: #444;">Flexible, modular workspaces designed to grow seamlessly.</p>
-            </div>
-            
-            <div style="margin-bottom: 20px;">
-                <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">3 MILLION SQ. FT. PORTFOLIO</h3>
-                <p style="font-size: 13px; line-height: 1.4; color: #444;">A proven legacy of delivering Grade-A infrastructure.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-                <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">STRATEGIC MICROMARKETS</h3>
-                <p style="font-size: 13px; line-height: 1.4; color: #444;">Prime locations in high-growth hubs for connectivity.</p>
-            </div>
-        </div>
+        <ul style="list-style: none; padding: 0; font-family: sans-serif;">
+            <li style="margin-bottom: 25px;">
+                <strong style="color: black; display: block; font-size: 18px;">SCALABLE OFFICES</strong>
+                <span style="font-size: 14px; color: #444; line-height: 1.6;">Flexible, modular workspaces designed to grow seamlessly with your business.</span>
+            </li>
+            <li style="margin-bottom: 25px;">
+                <strong style="color: black; display: block; font-size: 18px;">3 MILLION SQ. FT. PORTFOLIO</strong>
+                <span style="font-size: 14px; color: #444; line-height: 1.6;">A proven legacy of delivering Grade-A, world-class commercial infrastructure.</span>
+            </li>
+            <li style="margin-bottom: 25px;">
+                <strong style="color: black; display: block; font-size: 18px;">STRATEGIC MICROMARKETS</strong>
+                <span style="font-size: 14px; color: #444; line-height: 1.6;">Prime locations in high-growth hubs for maximum connectivity.</span>
+            </li>
+            <li style="margin-bottom: 25px;">
+                <strong style="color: black; display: block; font-size: 18px;">ELITE TALENT ACCESS</strong>
+                <span style="font-size: 14px; color: #444; line-height: 1.6;">Direct proximity to Noida's premier residential sectors and top-tier professional pools.</span>
+            </li>
+        </ul>
     </div>
 </section>
-    
             
  <div class="bg-slate-900 text-white py-4 text-center text-[22px] uppercase tracking-[0.1em] font-bold" 
      style="font-family: 'Montserrat', sans-serif !important;">
