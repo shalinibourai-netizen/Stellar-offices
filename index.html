@@ -84,8 +84,7 @@
     </p>
 </div>
     </section>
-<section style="position: relative; overflow: hidden; display: flex; flex-direction: row; align-items: center; min-height: 600px; padding: 60px 5%; background: #fff;">
-
+<section style="display: flex; position: relative; overflow: hidden; align-items: center; min-height: 600px; padding: 40px 5%; background: #fff;" class="flex-col md:flex-row">
     <div style="position: relative; z-index: 3; width: 100%; box-sizing: border-box;" class="w-full p-10 md:w-[45%] md:min-w-[320px]">
     <h2 style="color: #004a7c; font-size: 28px; display: block; border-left: 4px solid #004a7c; padding-left: 15px; margin-bottom: 30px; font-family: sans-serif;">
         OUR STRATEGIC PRESENCE
@@ -111,18 +110,16 @@
     </ul>
 </div>
 
-<div style="z-index: 1;" class="relative w-full h-[300px] md:absolute md:inset-0 md:h-full">
+<div class="relative w-full h-[250px] md:h-full md:absolute md:inset-0 md:order-2" style="z-index: 1;">
     <img src="map1.jpg" alt="Strategic Map"
     style="
-        /* Remove 'position: absolute' from here so we can control it via Tailwind classes below */
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover; /* This makes the map fill the width on mobile */
         opacity: 1;
         image-rendering: high-quality;
-        z-index: 1;"
-    /* Use these classes to handle the switch between Mobile and Desktop */
-    class="block md:absolute md:right-0 md:top-1/2 md:w-[750px] md:translate-y-[-50%] md:scale-[1.5] md:origin-right">
+        display: block;"
+    class="md:absolute md:right-0 md:top-1/2 md:w-[750px] md:translate-y-[-50%] md:scale-[1.5] md:origin-right">
 </div>
 </section>
 
