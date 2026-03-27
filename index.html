@@ -113,19 +113,16 @@
 
 <div style="z-index: 1;" class="relative w-full h-[300px] md:absolute md:inset-0 md:h-full">
     <img src="map1.jpg" alt="Strategic Map"
-    style="position: absolute;
-    right: 0; /* Keeps it pinned to the right */
-    top: 50%;
-    width: 750px; 
-    height: auto;
-    transform: translateY(-50%) scale(1.5);
-    transform-origin: right center;
-    object-fit: contain;
-    opacity: 1;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: high-quality;
-    will-change: transform;
-    z-index: 1;">
+    style="
+        /* Remove 'position: absolute' from here so we can control it via Tailwind classes below */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        opacity: 1;
+        image-rendering: high-quality;
+        z-index: 1;"
+    /* Use these classes to handle the switch between Mobile and Desktop */
+    class="block md:absolute md:right-0 md:top-1/2 md:w-[750px] md:translate-y-[-50%] md:scale-[1.5] md:origin-right">
 </div>
 </section>
 
