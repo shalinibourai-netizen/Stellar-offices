@@ -110,15 +110,15 @@
     </ul>
 </div>
 
-<div class="relative w-full h-[250px] md:h-full md:absolute md:inset-0 md:order-2" style="z-index: 1;">
+<div class="relative w-full h-[250px] md:h-auto md:min-h-[650px] md:absolute md:inset-0 md:order-2" style="z-index: 1;">
     <img src="map1.jpg" alt="Strategic Map"
     style="
-        width: 100%;
+        width: auto;
         height: auto;
-        object-fit: cover; /* This makes the map fill the width on mobile */
+        max-height: 90%; /* Prevents the map from touching the very top/bottom edges */
         image-rendering: high-quality;
         display: block;"
-    class="object-cover md:object-contain md:absolute md:right-0 md:top-1/2 md:w-[80%] md:h-[160%] md:translate-y-[-50%]">
+    class=""object-cover w-full h-full md:object-contain md:w-[70%] md:h-auto">
 </div>
 </section>
 
